@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>東京都国立市立美術館　利用案内ページ</title>
+    <!-- 共通ｃｓｓ -->
+    <link rel="stylesheet" href="../css/common.css">
+
+    <!-- このページのｃｓｓ -->
+    <link rel="stylesheet" href="../css/usageguide.css">
+
+    <!-- ↓ ここにjQuery本体ファイルの読み込み -->
+    <script src="../js/jquery-3.7.1.min.js"></script>
+
+    <!-- ↓ ここに自作jsファイルの読み込み -->
+    <script src="../js/usageguide.js"></script>
+
+
+       <!-- ファビコン -->
+       <link rel="icon" href="../favicon.ico">
+       <link rel="apple-touch-icon" href="../apple-touch-icon-180x180-precomposed.png">
+
+</head>
+
+<body>
+    <header class="flex">
+        <h1>
+            <a href="../index.html"><img src="../images/ロゴ440.png" alt="東京都国立市立美術館のロゴ" width="440" height="90"></a>
+        </h1>
+
+        <input type="checkbox" id="navSet" class="nav-switch">
+        <label for="navSet" class="nav-burger"></label>
+
+        <nav class="navi">
+            <ul class="flex">
+                <li><a href="../subPage1/index.html">美術館について</a></li>
+
+                <li><a href="../subPage2/index.html">特別展・イベント</a></li>
+
+                <li><a href="../subPage3/index.html">コレクション</a></li>
+
+                <li><a href="../subPage4/index.html">利用案内</a></li>
+
+                <li><a href="../subPage5/index.html">チケット</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <div class="inner-1">
+
+            <div>
+
+                <h3>利用案内</h3>
+
+                <div class="mininavi">
+                    <ul class="flex">
+                        <li><a href="#sec1">開館時間・休館日</a></li>
+                        <li><a href="#sec2">交通案内</a></li>
+                        <li><a href="#sec3">施設案内</a></li>
+                        <li><a href="#sec4">サービス</a></li>
+                    </ul>
+                </div>
+            </div>
+            <section id="sec1">
+                <h4>開館時間・休館日</h4>
+
+                <div class="time">
+                    <p>開館時間</p>
+                    <p>10:00-18:00（入館は17:30まで)</p>
+                </div>
+
+                <div class="day">
+                    <p>休館日</p>
+                    <p>月曜日（祝日の場合はその翌日）祝日の翌日（日曜日の場合は開館）年末年始、その他臨時開館･休館あり</p>
+                </div>
+
+            </section>
+
+            <section id="sec2">
+                <h4>交通案内</h4>
+                <p class="basyo">〒 177-0034 <span>東京都国立市富士見台2-12-2</span></p>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.72227499749!2d139.44361973159275!3d35.683839842890336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018e38aedd28231%3A0x49aa865918a53256!2z44CSMTg2LTAwMDMg5p2x5Lqs6YO95Zu956uL5biC5a-M5aOr6KaL5Y-w77yS5LiB55uu77yR77yS4oiS77yS!5e0!3m2!1sja!2sjp!4v1729511089442!5m2!1sja!2sjp"
+                        width="900" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+
+            <div>
+                <div class="bus">
+                    <p>＜駅からのアクセス＞</p>
+                    <p>谷保駅から徒歩40分<br>
+                        JR谷保駅バスターミナル南口1番乗り場より、バスで約25分</p>
+                </div>
+
+                <div class="flex-container">
+                    <div class="flex-item">
+                        <p><a href="#"><img src="../images/時刻表01_360x380.png" alt="時刻表" width="360"
+                                    height=""></a>
+                        </p>
+                    </div>
+
+                    <div class="flex-item">
+                        <p><a href="#"><img src="../images/時刻表02_360x380.png" alt="時刻表" width="360"
+                                    height=""></a>
+                        </p>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div id="sec3">
+                <h4>施設案内</h4>
+
+                <div class="floormap">
+                    <div class="floormap1">
+                        <p><img src="../images/map01_600x430.png" alt="マップ" width="600" height="430"></p>
+                    </div>
+                    <div class="floormap2">
+                        <p><img src="../images/map02_600x430.png" alt="マップ" width="600" height="430"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="sec4">
+                <h4>サービス</h4>
+
+                <div>
+                    <p class="parking">駐車場</p>
+                    <p class="parkingtext">東山魁夷館北側には信州パーキング・パーミット制度にて指定された方の
+                        専用駐車場として、車椅子使用者用駐車区画が4区画、その他の駐車区画が
+                        8区画あります。また、本館2階南側と3階東側に車椅子使用者用駐車区画が
+                        それぞれ2区画あります。駐車できる台数には限りがありますのでご了承ください。
+                    </p>
+                </div>
+
+                <div>
+                    <p class="parking2">車いす</p>
+                    <p class="parkingtext2">車椅子の貸出を行っております。
+                        各階の受付またはお近くのスタッフにお申し出ください。
+                        全ての階に多機能トイレがあります。</p>
+                    <div class="kurumaisu">
+                        <P><img src="../images/といれ.png" alt="トイレ" width="470" height="300"></P>
+                        <P><img src="../images/車いす.png" alt="車いす" width="470" height="300"></P>
+                    </div>
+                </div>
+
+
+                <div>
+                    <p class="parking">ベビーカー</p>
+                    <p class="parkingtext3">
+                        貸出ベビーカーを用意しております。
+                        本館1階受付またはお近くのスタッフにお申し出ください。
+                    </p>
+                    <div class="baby">
+                        <p><img src="../images/toile02_470x300.png" alt="トイレ" width="470" height="300"></p>
+                        <p><img src="../images/ベビーカー470x300.png" alt="ベビーカー" width="470" height="300"></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <footer class="bg-1">
+
+            <div>
+                <nav>
+                    <ul class="flex">
+                        <li><a href="#">美術館について</a></li>
+
+
+                        <li><a href="#">特別展・イベント</a></li>
+
+
+                        <li><a href="#">コレクション</a></li>
+
+
+                        <li><a href="#">利用案内</a></li>
+
+
+                        <li><a href="#">チケット</a></li>
+                    </ul>
+                </nav>
+                <div class="foot">
+                    <div class="flex">
+
+                        <div class="namelogo"><a href="../index.html"><img src="../images/ロゴ名前320x60.png"
+                                    alt="美術館の名前ロゴ" width="320" height="60"></a></div>
+
+                        <address>
+                            <p>〒345-444 東京都国立市1-3-4 TEL567-432-666TEL:055-228-3322　FAX:055-228-3324<br>
+                                開館時間　10:00-18:00（入館は17:30まで）<br>
+                                休館日：月曜日（祝日の場合はその翌日）祝日の翌日（日曜日の場合は開館）年末年始<br>その他臨時開館･休館あり</p>
+                        </address>
+
+
+                    </div>
+                </div>
+                <div class="small">
+                    <p><small>&copy;2025 tokoy kunitaticity Museum</small></p>
+                </div>
+            </div>
+        </footer>
+
+        <div class="top-btn">
+            <p><a href="#"><img src="../images/top40x0.png" alt="トップに戻るボタン" width="40" height="40"></a>
+            </p>
+        </div>
+
+    </main>
+
+
+</body>
+
+</html>

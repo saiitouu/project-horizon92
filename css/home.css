@@ -1,0 +1,441 @@
+@charset "utf-8";
+
+
+.mv {
+    margin-top: 110px;
+    margin-bottom: 20px;
+
+}
+
+/* あとでスリック */
+
+.arice {
+    margin-right: 20px;
+
+}
+
+.cafe {
+    margin-right: 20px;
+}
+
+.time {
+    margin-right: 20px;
+}
+
+.variable-width {
+    padding-bottom: 50px;
+}
+
+
+/* ニュース */
+
+.inner-1 {
+    padding: 20px;
+    text-align: center;
+    /* 全体を中央揃え */
+}
+
+.news h2 {
+    text-align: center;
+    /* NEWS タイトルを中央揃え */
+    margin-bottom: 20px;
+}
+
+dl {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* 縦方向に並べる */
+    align-items: center;
+    /* 中央揃えにする */
+}
+
+.news .flex {
+    display: flex;
+    justify-content: flex-start;
+    /* 日付と内容の左端を揃える */
+    align-items: flex-start;
+    /* 上部を基準に揃える */
+
+    width: 80%;
+    /* 中央に配置するための幅の調整 */
+    border-bottom: 1px solid #ccc;
+    /* 下線を追加 */
+    padding: 10px 0;
+}
+
+dt {
+    flex-basis: 20%;
+    /* 日付の部分に固定幅を確保 */
+    text-align: center;
+    /* 日付を中央揃え */
+}
+
+dd {
+    flex-basis: 75%;
+    /* 内容の部分に固定幅を確保 */
+    text-align: center;
+    /* 内容を中央揃え */
+    margin: 0;
+    /* デフォルトのマージンをリセット */
+}
+
+.more-btn {
+    margin-top: 20px;
+    text-align: right;
+    padding-right: 94px;
+}
+
+.more-btn a {
+    text-decoration: none;
+    padding: 10px 20px;
+
+
+    color: #2c2c2a;
+    transition: color .3s;
+}
+
+
+.more-btn a:hover {
+    color: #c2714f;
+}
+
+
+/* about */
+
+.about .flex {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+
+}
+
+.about .flex .abouttext {
+    width: 320px;
+    /* 横幅を320pxに固定 */
+    height: 130px;
+    /* 高さを130pxに固定 */
+
+    text-align: justify;
+    /* 文章を両端揃えにする（必要に応じて） */
+    line-height: 1.6;
+    /* 行間を調整して読みやすくする */
+    margin-right: 120px;
+
+}
+
+.text {
+    margin-right: 120px;
+}
+
+.more {
+    text-align: right;
+    padding-top: 10px;
+    padding-right: 120px;
+}
+
+.more a {
+    color: #f2f1f0;
+    transition: color .3s;
+}
+
+.more a:hover {
+    color: #2c2c2a;
+}
+
+.nth-child {
+    flex-direction: row-reverse;
+}
+
+.about .flex .abouttext2 {
+    width: 320px;
+    /* 横幅を320pxに固定 */
+    height: 130px;
+    /* 高さを130pxに固定 */
+
+    text-align: justify;
+    /* 文章を両端揃えにする（必要に応じて） */
+    line-height: 1.6;
+    /* 行間を調整して読みやすくする */
+    margin-left: 95px;
+
+}
+
+.text2 {
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+.more2 {
+    text-align: right;
+    padding-top: 10px;
+    padding-left: 120px;
+}
+
+.more2 a {
+    color: #f2f1f0;
+    transition: color .3s;
+}
+
+
+.more2 a:hover {
+    color: #2c2c2a;
+}
+
+.pic {
+    padding-left: 25px;
+}
+
+.pic2 {
+    padding-right: 20px;
+}
+
+.pic a {
+    transition: opacity .3s;
+}
+
+.pic a:hover {
+    opacity: 0.6;
+}
+
+.pic2 a {
+    transition: opacity .3s;
+}
+
+.pic2 a:hover {
+    opacity: 0.6;
+}
+
+/* インスタ */
+
+.insta {
+    font-family: 'Garamond', 'Times New Roman', serif;
+    font-weight: bold;
+    padding-bottom: 20px;
+
+}
+
+.insta span a {
+    color: #00a0e9;
+    margin-left: 20px;
+    transition: opacity .3s
+}
+
+.insta span a:hover {
+    opacity: 50%;
+}
+
+
+.instpic img {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    /* ホバー時のアニメーションを設定 */
+    width: 100%;
+    /* 画像を親要素の幅に合わせる */
+    height: auto;
+
+}
+
+.instpic:hover img {
+    transform: scale(1.1);
+    /* ホバー時に1.1倍にズーム */
+    opacity: 0.8;
+    /* 少し透明にする */
+}
+
+
+
+/* レスポンシブ */
+
+@media screen and (max-width:1130px) {
+    .news .flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+
+
+    /* aboutの写真 */
+    .about .flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* 画像のクラスに対して、幅を調整 */
+    .about .flex .pic,
+    .about .flex .pic2 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* テキスト部分の幅も合わせる */
+    .flex .text,
+    .flex .text2,
+    .flex .abouttext,
+    .flex .abouttext2 {
+        width: 100%;
+        padding: 0 20px;
+        padding-bottom: 20px;
+    }
+
+    .abouttext,
+    .abouttext2 {
+        margin-bottom: 30px;
+    }
+
+    .more {
+        margin-bottom: 10px;
+    }
+
+
+    .pic {
+        padding-left: 0;
+    }
+
+    .pic2 {
+        padding-right: 0;
+    }
+
+    .text {
+        margin-right: 0;
+
+    }
+
+    .about .flex .abouttext {
+        margin-right: 0;
+    }
+
+    .text2 {
+        margin-left: 0;
+    }
+
+    .about .flex .abouttext2 {
+        margin-left: 0;
+    }
+
+    .more {
+        padding-right: 0;
+    }
+
+    .home-title {
+        padding: 5px 0;
+    }
+
+    .variable-width {
+        padding-bottom: 20px;
+    }
+
+    .mv {
+        margin-bottom: 15px;
+    }
+}
+
+
+
+@media screen and (max-width:768px) {
+    .mv {
+
+        margin-top: 77px;
+        margin-bottom: 15px;
+    }
+
+    /* 縦に伸ばしてもいいように */
+    .mv img {
+
+
+        height: 350px;
+        object-fit: cover;
+        /* object-position: right; */
+    }
+
+
+}
+
+
+@media screen and (max-width:590px) {
+
+
+
+    .insta span a {
+        margin-left: 10px;
+        font-size: 13px;
+    }
+
+    .insta span {
+        display: block;
+    }
+}
+
+
+
+@media screen and (max-width:500px) {
+
+    .arice img,
+    .cafe img,
+    .time img {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .arice {
+        margin-right: 10px;
+
+    }
+
+    .cafe {
+        margin-right: 10px;
+    }
+
+    .time {
+        margin-right: 10px;
+    }
+
+    /* ヘッターの下余白消す */
+    .mv {
+        margin-bottom: 10px;
+        margin-top: 70px;
+    }
+
+    /* 縦に伸ばしてもいいように */
+    .mv img {
+
+
+        height: 400px;
+        object-fit: cover;
+        /* object-position: right; */
+
+    }
+
+    .more-btn {
+        padding-right: 0;
+    }
+
+}
+
+@media screen and (max-width:370px) {
+
+    .arice img,
+    .cafe img,
+    .time img {
+        width: 65%;
+        margin: 0 auto;
+    }
+
+    .arice {
+        margin-right: 10px;
+
+    }
+
+    .cafe {
+        margin-right: 10px;
+    }
+
+    .time {
+        margin-right: 10px;
+    }
+}

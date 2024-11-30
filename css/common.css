@@ -1,0 +1,516 @@
+@charset "utf-8";
+
+
+/* リセット */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl,
+dd,
+figure {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+a {
+    text-decoration: none;
+}
+
+address {
+    font-style: normal;
+}
+
+
+/* 全体 */
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-size: 16px;
+    font-family: 'BIZ UDMincho Medium', serif;
+    font-weight: bold;
+    line-height: 1;
+    color: #2c2c2a;
+    background-color: #f2f1f0;
+}
+
+h2 {
+    font-family: 'Garamond', 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 28px;
+    text-align: center;
+    padding: 30px 0;
+}
+
+h3 {
+    font-size: 24px;
+    color: #c2714f;
+    text-align: center;
+}
+
+h4 {
+    color: #c2714f;
+    font-size: 22px;
+    padding: 20px 0 15px 0;
+}
+
+h5 {
+    font-size: 26px;
+}
+
+
+
+
+/* コンテンツ幅 */
+
+
+.inner-1 {
+    width: 1024px;
+    margin: 0 auto;
+    /* outline: 1px solid #2c2c2a; */
+}
+main{
+    overflow: hidden;
+}
+
+
+
+/* 横並び */
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* 背景 */
+.bg-1 {
+    background-color: #c2714f;
+}
+
+
+/* エリアごと */
+
+/* ヘッター */
+
+header {
+    padding: 10px;
+
+}
+
+header nav {
+    line-height: 75px;
+    padding-right: 70px;
+    padding-top: 30px;
+}
+
+header nav ul {
+    column-gap: 20px;
+
+
+}
+
+header nav ul li a {
+    color: #2c2c2a;
+    transition: color .3s;
+}
+
+header nav ul li a:hover {
+    color: #c2714f;
+}
+
+
+/* 固定 */
+header {
+    position: fixed;
+    /* ヘッダーを固定 */
+    top: 0;
+    /* ページの一番上に固定 */
+    left: 0;
+    /* 左端に配置 */
+    width: 100%;
+    /* 横幅をページいっぱいに広げる */
+    z-index: 1000;
+    /* 他の要素の上に表示するために高めの z-index を設定 */
+    background-color: #f2f1f0;
+    /* 背景色を設定（スクロール時に透明だと見えにくくなるため） */
+    height: 110px;
+}
+
+
+
+
+/* フッター */
+
+footer {
+    padding: 20px;
+    /* text-align: center; */
+}
+
+footer nav {
+    margin: 10px auto 60px;
+    max-width: 600px;
+
+}
+
+footer nav ul {
+    column-gap: 20px;
+
+
+}
+
+
+footer nav ul li a {
+    color: #2c2c2a;
+    transition: color .3s;
+}
+
+footer nav ul li a:hover {
+    color: #f2f1f0;
+}
+
+footer .namelogo {
+    padding-left: 100px;
+}
+
+
+footer address {
+    padding-right: 130px;
+}
+
+footer .small {
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+
+
+
+/* top btn */
+
+
+.top-btn p {
+    width: 80px;
+    line-height: 80px;
+    text-align: center;
+
+    position: fixed;
+    bottom: 40px;
+    right: 10px;
+    z-index: 999;
+}
+
+.top-btn p a {
+
+
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: opacity .3s,
+}
+
+.top-btn p a:hover {
+    opacity: 50%;
+
+}
+
+
+
+
+/* レスポンシブ *
+    
+/* コンテンツ幅の指定方法を修正 */
+.inner-1 {
+    width: auto;
+
+    max-width: 1024px;
+
+    min-width: 280px;
+
+}
+
+
+
+
+/* 見出し画像のフルードイメージ対応 */
+img {
+    max-width: 100%;
+
+    height: auto;
+}
+
+/* header img{
+    max-width: 80%;
+    height: auto;
+} */
+
+
+/* -----------------------------------------
+  チェックボックスを非表示 （最後に追記）
+----------------------------------------- */
+.nav-switch {
+    display: none;
+}
+
+@media screen and (max-width:1130px) {
+
+    .inner-1 {
+        width: 90%;
+    }
+
+
+    header img {
+        max-width: 90%;
+        height: auto;
+        /* 縦横比を保護 */
+        margin-left: 15px;
+    }
+
+
+    /* ハンバーガーボタンを作る */
+    .nav-burger {
+        display: block;
+        /* widthとheightを効かせるためのdisplay切り替え */
+        width: 30px;
+        /* 背景画像の分のサイズを確保 */
+        height: 30px;
+
+        /* ↓ 三本線のボタン画像を背景画像として差し込む */
+        background-image: url(../images/burger_30x30.png);
+
+        position: fixed;
+        /* ブラウザの上から16px、右から16pxの位置に固定 */
+        top: 16px;
+        right: 16px;
+        z-index: 2;
+        /* 重なり順の指定 */
+    }
+
+    /* 三本線のボタンと✕のボタンの切り替え */
+
+    .nav-switch:checked~.nav-burger {
+        background-image: url(../images/close_30x30.png);
+    }
+
+    /* マウスカーソルの調整 */
+    .nav-burger:hover {
+        cursor: pointer;
+    }
+
+    /* ナビゲーションが開いたときの見た目を仕上げる ＝ スタイルを作り変える */
+    .navi {
+        background-color: rgba(251, 246, 246, 0.9);
+        position: fixed;
+        /* ブラウザの画面いっぱいに広げて固定 */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        /* 余白の調整 */
+        margin: 0;
+        padding-top: 100px;
+        z-index: 1;
+    }
+
+    nav ul li a {
+        color: #fff;
+        margin: 15px 0;
+    }
+
+
+    nav ul li a:hover {
+        color: rgba(255, 255, 255, 0.6);
+        background: transparent;
+    }
+
+
+
+    header nav .flex {
+        flex-direction: column;
+        gap: 0;
+        align-items: center;
+        padding-left: 80px;
+    }
+
+
+    /* 横並びを縦並びに変える */
+    header nav ul li {
+        border: none;
+        border-top: 1px solid #aaa;
+        background-color: transparent;
+        width: auto;
+        line-height: 60px;
+
+    }
+
+    nav ul li:last-child {
+        border-bottom: 1px solid #aaa;
+    }
+
+    /* ★★★ html要編集 !
+... navタグに表示/非表示切り替え用のclass名「navi」を追加 */
+
+    /* class名「navi」を使ってnavタグを丸ごと非表示にする */
+    .navi {
+        display: none;
+    }
+
+    /* inputタグにチェックが入ると「navi」が再表示される */
+    .nav-switch:checked~.navi {
+        display: block;
+    }
+
+
+
+    /* フッター */
+
+    footer nav .flex {
+        flex-direction: column;
+        gap: 0;
+        align-items: center;
+        padding-left: 0;
+    }
+
+
+    /* 横並びを縦並びに変える */
+    footer nav ul li {
+        border: none;
+        border-top: 1px solid #aaa;
+        background-color: transparent;
+        width: auto;
+        line-height: 60px;
+
+    }
+
+    nav ul li:last-child {
+        border-bottom: 1px solid #aaa;
+    }
+
+
+    footer .namelogo {
+        padding-left: 0;
+    }
+
+
+    footer address {
+        padding-right: 0;
+    }
+
+    footer .small {
+        text-align: center;
+        padding-top: 0;
+    }
+
+    .foot .flex {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        /* アドレスのテキストを中央揃え */
+    }
+
+    .namelogo img {
+        width: 200px;
+        /* ロゴのサイズを縮小 */
+        height: auto;
+        /* アスペクト比を保持 */
+    }
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+/* -----------------------------------------
+  768px以下の画面に向けた記述
+----------------------------------------- */
+
+@media screen and (max-width:768px) {
+
+    /* ヘッダー */
+    header img {
+        max-width: 80%;
+        height: auto;
+        /* 縦横比を保護 */
+        margin-left: 15px;
+    }
+
+    /* 文字揃えが両端揃えになるよう整える
+    （画面幅が小さいと行送りが増えてバラつきが目立つため） */
+    .abouttext .abouttext2 {
+        text-align: justify;
+    }
+
+
+
+
+
+    footer .logo img {
+        max-width: 90%;
+    }
+
+    .top-btn img {
+        width: 20px;
+        height: 20px;
+    }
+
+    header{
+        height: auto;
+    }
+    footer .small{
+        font-size: 10px;
+    }
+
+
+
+}
+
+@media screen and (max-width:500px) {
+
+    address p {
+        font-size: 10px;
+        /* 必要に応じてフォントサイズを調整 */
+    }
+
+    .top-btn p {
+        width: 80px;
+        line-height: 80px;
+        text-align: center;
+    
+        position: fixed;
+        bottom: 100px;
+        right: 0px;
+        z-index: 999;
+    }
+    header{
+        padding-top: 10px;
+        height: auto;
+    }
+
+
+}

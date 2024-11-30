@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>東京都国立市立美術館　aboutページ</title>
+
+    <!-- 共通ｃｓｓ -->
+    <link rel="stylesheet" href="../css/common.css">
+
+
+    <!-- このページのｃｓｓ -->
+    <link rel="stylesheet" href="../css/about.css">
+
+    <!-- ↓ ここにjQuery本体ファイルの読み込み -->
+    <script src="../js/jquery-3.7.1.min.js"></script>
+
+    <!-- ↓ ここに自作jsファイルの読み込み -->
+    <script src="../js/about.js"></script>
+
+    <!-- ファビコン -->
+    <link rel="icon" href="../favicon.ico">
+    <link rel="apple-touch-icon" href="../apple-touch-icon-180x180-precomposed.png">
+
+</head>
+
+<body>
+    <header class="flex">
+        <h1>
+            <a href="../index.html"><img src="../images/ロゴ440.png" alt="美術館のロゴ" width="440" height="90"></a>
+        </h1>
+
+        <!-- ↓　ここにハンバーガーボタンのコードを設置　↓ -->
+        <input type="checkbox" id="navSet" class="nav-switch">
+        <label for="navSet" class="nav-burger"></label>
+
+        <nav class="navi">
+            <ul class="flex">
+                <li><a href="../subPage1/index.html">美術館について</a></li>
+
+                <li><a href="../subPage2/index.html">特別展・イベント</a></li>
+
+                <li><a href="../subPage3/index.html">コレクション</a></li>
+
+                <li><a href="../subPage4/index.html">利用案内</a></li>
+
+                <li><a href="../subPage5/index.html">チケット</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <div class="inner-1">
+            <div>
+
+                <h3>美術館について</h3>
+                <div class="mininavi">
+                    <ul class="flex">
+                        <li><a href="#sec1">ごあいさつ</a></li>
+                        <li><a href="#sec2">美術館について</a></li>
+                        <li><a href="#sec3">建築について</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="greeting-container" id="sec1">
+                <div class="greeting-text">
+                    <h4>ごあいさつ</h4>
+                    <p class="aisatu">当美術館は、東京都に位置しながらも、四季折々の自然が豊かに彩るこの国立市の特別な環境に恵まれています。
+                        桜並木や緑豊かな公園など、都会の喧騒から少し離れたこの地域は、訪れる皆さまに心の安らぎと創造的なひらめきを与えてくれる場所です。
+
+                        私たちの美術館は、自然と文化が調和するこの土地ならではの芸術体験を提供したいと考えております。国内外の優れた作品はもちろんのこと、
+                        私たちの目指すのは、来館される皆さまがここでの芸術との出会いを通じて、
+                        心に新たな感動とインスピレーションを得られる場を提供することです。
+
+                        国立市の自然の美しさと、当美術館が誇る多彩な芸術作品を通じて、皆さまの感性を豊かにし、日々の生活に彩りを加えるひとときをお楽しみいただければ幸いです。
+
+                        皆さまのご来館を心よりお待ちしております。
+                    </p>
+                </div>
+
+                <div class="greeting-image">
+                    <p><img src="../images/館長150x200.png" alt="館長" width="150" height="200"></p>
+                    <p class="kanntyou">国立市美術館 館長</p>
+                </div>
+
+            </div>
+
+
+            <div id="sec2">
+                <h4>美術館について</h4>
+                <p class="bizyututext">東京都の一角にありながら、豊かな自然に囲まれた国立市に位置しています。四季折々に変わる風景が美しいこの地域は、
+                    都市の利便性を保ちながらも、静かで落ち着いた空気が流れる場所です。この独特の環境の中で、美術館は自然と調和した芸術の場として、
+                    多くの方々に親しまれています。また、国立市や周辺地域にゆかりのあるアーティストの作品を積極的に紹介し、地域の文化と芸術を支える重要な役割を担っています。
+                    また、私たちはただ作品を鑑賞するだけでなく、訪れる皆さまが芸術を体験し、学び、楽しむことができるよう、さまざまなワークショップやイベントも開催しています。
+                    子供から大人まで、誰もが気軽に参加できるプログラムを通じて、地域のコミュニティとのつながりを深めることを大切にしています。
+                </p>
+            </div>
+
+            <div id="sec3">
+                <h4>建築について</h4>
+                <p class="kenntikuimg"><img src="../images/建築.png" alt="美術館の外観" width="690" height="400">
+                </p>
+                <p class="kenntikutext">当美術館の建物は、著名な建築家・金本芳典氏による設計で、その独特なデザインが訪れる人々に深い印象を与えます。
+                    金本氏は自然との調和を大切にし、地域の特性を活かした建築を手掛けてきたことで知られており、この美術館もその哲学が息づいています。
+                    美術館は、二階建てのゆったりとした構造で、訪れる方々が自然の光や風を感じながら芸術を鑑賞できるよう工夫されています。
+                    特にエントランスホールは、天井が高く開放感あふれる吹き抜け構造となっており、入館した瞬間から広々とした空間の中で芸術に触れる期待感が高まります。
+                    この吹き抜け部分には、ガラス張りの大きな窓が配されており、自然光が降り注ぐ設計となっています。これにより、時間帯や季節ごとに異なる光の表情が建物全体に彩りを与え、
+                    訪れるたびに新たな印象をもたらします。</p>
+            </div>
+        </div>
+
+        <footer class="bg-1">
+
+            <div>
+                <nav>
+                    <ul class="flex">
+                        <li><a href="../subPage1/index.html">美術館について</a></li>
+
+
+                        <li><a href="../subPage2/index.html">特別展・イベント</a></li>
+
+
+                        <li><a href="../subPage3/index.html">コレクション</a></li>
+
+
+                        <li><a href="../subPage4/index.html">利用案内</a></li>
+
+
+                        <li><a href="../subPage5/index.html">チケット</a></li>
+                    </ul>
+                </nav>
+
+                <div class="foot">
+                    <div class="flex">
+
+                        <div class="namelogo"><a href="../index.html"><img src="../images/ロゴ名前320x60.png"
+                                    alt="美術館の名前ロゴ" width="320" height="60"></a></div>
+
+                        <address>
+                            <p>〒345-444 東京都国立市1-3-4 TEL567-432-666TEL:055-228-3322　FAX:055-228-3324<br>
+                                開館時間　10:00-18:00（入館は17:30まで）<br>
+                                休館日：月曜日（祝日の場合はその翌日）祝日の翌日（日曜日の場合は開館）年末年始<br>その他臨時開館･休館あり</p>
+                        </address>
+
+
+                    </div>
+                </div>
+
+                <div class="small">
+                    <p><small>&copy;2025 tokoy kunitaticity Museum</small></p>
+                </div>
+            </div>
+        </footer>
+
+        <div class="top-btn">
+            <p><a href="#"><img src="../images/top40x0.png" alt="トップに戻るボタン" width="40" height="40"></a>
+            </p>
+        </div>
+
+    </main>
+</body>
+
+</html>

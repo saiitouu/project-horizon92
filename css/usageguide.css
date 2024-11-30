@@ -1,0 +1,335 @@
+@charset "utf-8";
+
+.inner-1 {
+    width: 1024px;
+    margin: 0 auto;
+    /* outline: 1px solid #2c2c2a; */
+}
+
+main {
+    padding-top: 120px;
+    /* ヘッダーの高さ分の余白を追加 */
+}
+
+.inner-1 {
+    padding: 20px;
+}
+
+h3 {
+
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+
+/* 小さいナビ */
+
+
+.mininavi {
+    padding-top: 15px;
+    margin-bottom: 30px;
+}
+
+.mininavi .flex {
+    justify-content: center;
+    gap: 70px;
+
+}
+
+.mininavi .flex a {
+    color: #2c2c2a;
+    transition: color .3s;
+}
+
+.mininavi .flex a:hover {
+    color: #c2714f;
+}
+
+
+
+.mininavi li::before {
+    content: "";
+    /* 空のコンテンツを生成 */
+    display: inline-block;
+    /* インラインブロックにして、画像として扱えるようにする */
+    width: 5px;
+    /* 画像の幅 */
+    height: 7px;
+    /* 画像の高さ */
+    background-image: url(../images/矢印5x7.png);
+    /* 画像を指定 */
+    background-size: contain;
+    /* 画像を要素の大きさに合わせる */
+    background-repeat: no-repeat;
+    /* 画像が繰り返されないようにする */
+    margin-right: 5px;
+    /* テキストとの間にスペースを作る */
+    vertical-align: middle;
+    /* テキストと縦方向を揃える */
+}
+
+.mininavi li:nth-child(2)::before {
+    background-image: url(../images/矢印5x7.png);
+    /* 2番目のリストアイテムに別の画像 */
+}
+
+.mininavi li:nth-child(3)::before {
+    background-image: url(../images/矢印5x7.png);
+    /* 3番目のリストアイテムに別の画像 */
+}
+
+
+/* 時間、日にち */
+
+.time {
+    margin: 10px 0 20px 0;
+    width: 100%;
+    /* 画面幅に合わせて可変 */
+    max-width: 670px;
+    /* 最大幅を670pxに制限 */
+    height: auto;
+    /* 高さは自動調整 */
+    padding-top: 10px;
+    line-height: 1.5;
+}
+
+.day {
+    margin-bottom: 20px;
+    width: 100%;
+    /* 画面幅に合わせて可変 */
+    max-width: 670px;
+    /* 最大幅を670pxに制限 */
+    height: auto;
+    /* 高さは自動調整 */
+    padding-top: 10px;
+    line-height: 1.5;
+}
+
+/* 場所 */
+.basyo {
+    margin: 10px 0 20px 0;
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    /* アスペクト比16:9のため */
+    height: 0;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+iframe {
+    display: inline-block;
+    /* インライン要素に変更 */
+    margin: 0 auto;
+    /* 中央揃え */
+}
+
+
+/* バス */
+
+.bus {
+    margin-top: 30px;
+    padding-left: 20px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    /* 横方向に中央揃え */
+    align-items: center;
+    /* 縦方向に中央揃え */
+    gap: 20px;
+    /* 画像間のスペース（調整可能） */
+
+}
+
+.flex-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-item a {
+    transition: opacity .3s;
+}
+
+.flex-item a:hover {
+    opacity: 0.5;
+}
+
+/* フロアマップ */
+
+.floormap {
+
+    text-align: center;
+    margin: 20px 0;
+}
+
+.floormap1 {
+    margin-bottom: 60px;
+}
+
+/* 駐車場 */
+.parking {
+    font-size: 18px;
+
+}
+
+.parkingtext {
+    width: 100%;
+    /* 画面幅に合わせて可変 */
+    max-width: 670px;
+    /* 最大幅を670pxに制限 */
+    height: auto;
+    /* 高さは自動調整 */
+    padding-top: 10px;
+    line-height: 1.5;
+}
+
+/* 車いす */
+
+
+
+.parking2 {
+    margin-top: 15px;
+}
+
+.kurumaisu {
+    display: flex;
+    justify-content: center;
+    /* 横方向に中央揃え */
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+
+
+}
+
+.parkingtext2 {
+    width: 100%;
+    /* 画面幅に合わせて可変 */
+    max-width: 670px;
+    /* 最大幅を670pxに制限 */
+    height: auto;
+    /* 高さは自動調整 */
+    padding-top: 10px;
+    line-height: 1.5;
+}
+
+/* ベビーカー */
+.baby {
+    display: flex;
+    justify-content: center;
+    /* 横方向に中央揃え */
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.parkingtext3 {
+    width: 100%;
+    /* 画面幅に合わせて可変 */
+    max-width: 670px;
+    /* 最大幅を670pxに制限 */
+    height: auto;
+    /* 高さは自動調整 */
+    padding-top: 10px;
+    line-height: 1.5;
+}
+
+
+
+
+/* レスポンシブ *
+    
+/* コンテンツ幅の指定方法を修正 */
+.inner-1 {
+    width: auto;
+
+    max-width: 1024px;
+
+    min-width: 280px;
+
+}
+
+
+
+
+/* 見出し画像のフルードイメージ対応 */
+img {
+    max-width: 100%;
+
+    height: auto;
+    /* margin-bottom: 10px; */
+}
+
+.nav-switch {
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+        /* 中央寄せ */
+        gap: 20px;
+        /* 画像間に20pxの隙間を設定 */
+    }
+
+    .kurumaisu {
+        flex-direction: column;
+        align-items: center;
+        /* 中央寄せ */
+        gap: 20px;
+        /* 画像間に20pxの隙間を設定 */
+    }
+
+    .baby {
+        flex-direction: column;
+        align-items: center;
+        /* 中央寄せ */
+        gap: 20px;
+        /* 画像間に20pxの隙間を設定 */
+    }
+}
+
+
+@media screen and (max-width:650px) {
+
+    .mininavi .flex {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .mininavi .flex {
+        font-size: 11px;
+        gap: 15px;
+    }
+}
+
+
+@media screen and (max-width:350px) {
+    .mininavi .flex {
+        font-size: 10px;
+        gap: 12px;
+    }
+}

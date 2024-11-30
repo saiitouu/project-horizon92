@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>東京都国立市立美術館　チケットページ</title>
+
+    <!-- 共通ｃｓｓ -->
+    <link rel="stylesheet" href="../css/common.css">
+
+    <!-- このページのｃｓｓ -->
+    <link rel="stylesheet" href="../css/ticket.css">
+
+    <!-- ↓ ここにjQuery本体ファイルの読み込み -->
+    <script src="../js/jquery-3.7.1.min.js"></script>
+
+    <!-- ↓ ここに自作jsファイルの読み込み -->
+    <script src="../js/ticket.js"></script>
+
+
+    <!-- ファビコン -->
+    <link rel="icon" href="../favicon.ico">
+    <link rel="apple-touch-icon" href="../apple-touch-icon-180x180-precomposed.png">
+
+</head>
+
+<body>
+    <header class="flex">
+        <h1>
+            <a href="../index.html"><img src="../images/ロゴ440.png" alt="東京都国立市立美術館のロゴ" width="440"
+                    height="90"></a>
+        </h1>
+
+        <input type="checkbox" id="navSet" class="nav-switch">
+        <label for="navSet" class="nav-burger"></label>
+
+        <nav class="navi">
+            <ul class="flex">
+                <li><a href="../subPage1/index.html">美術館について</a></li>
+
+                <li><a href="../subPage2/index.html">特別展・イベント</a></li>
+
+                <li><a href="../subPage3/index.html">コレクション</a></li>
+
+                <li><a href="../subPage4/index.html">利用案内</a></li>
+
+                <li><a href="../subPage5/index.html">チケット</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="inner-1">
+            <div>
+                <h3>チケット</h3>
+
+                <div class="mininavi">
+                    <ul class="flex">
+                        <li><a href="#sec1">観覧料</a></li>
+                        <li><a href="#sec2">割引情報</a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+            <div id="sec1">
+                <h4>観覧料</h4>
+
+                <div>
+                    <P class="gap">一般 1,760円（1,430円)</P>
+                    <p class="gap">高大生 1,100円（770円）</p>
+                    <p class="gap"> 中学生以下 無料</p>
+                    <p class="gap"> シニア割引 1,540円</p>
+                    <p class="gap"> 障害者割引 無料</p>
+                </div>
+
+                <p class="gap1">（　）内は10名以上の団体料金</p>
+
+                <div>
+                    <p class="gap2">※ 各種割引の併用はできません。</p>
+                    <p class="gap2"> ※ 高大生の方は入館の際、身分を証明できるものをご提示ください。</p>
+                    <p class="gap2"> ※ シニア割引の適用は65歳以上となります。（証明できるものをご提示ください）</p>
+                    <p class="gap2">※ 障害者割引の適用は障害のある方とその付添者2名、合計3名様無料となります。（証明できるものをご提示ください）</p>
+                </div>
+
+            </div>
+
+            <div id="sec2">
+                <h4>割引情報</h4>
+
+                <div class="kids">
+                    <div class="info">国立っ子学びのパスポート</div>
+                    <p>国立市在住、在学の小・中学生は「国立っ子学びのパスポート」を提示すると、いずれの展覧会も無料でご覧になれます。</p>
+                </div>
+
+            </div>
+
+            <div class="annualpass">
+                <div class="info">年間パスポート (定期観覧券)</div>
+                <p>発行日から1年間、東京都国立市立美術館のコレクション展・特別展を何回でも
+                    ご観覧いただける便利でお得な観覧券です。</p>
+            </div>
+
+            <div class="free-viewing-info">
+                <div>
+                    <div class="info">各種優待</div>
+                    <p>次のいずれかの方は、無料でご観覧いただけます。</p>
+                    <p>2階に直接お進みいただき、未就学児以外の方は、展示室改札で手帳や会員証、学生証等をご提示ください。</p>
+                </div>
+
+                <div class="free-viewing-info2">
+                    <ul>
+                        <li>未就学のお子様</li>
+                        <li>身体障害者手帳、愛の手帳（療育手帳）、精神障害者保健福祉手帳、戦傷病者手帳、被爆者健康手帳をお持ちの方とその付き添いの方1名</li>
+                        <li>国立っ子学びのパスポートをお持ちの国立市在住、在学の小中学生</li>
+                        <li>日本博物館協会、ICOM（国際博物館会議）、日本美術家連盟、aica（美術評論家連盟）の会員</li>
+                        <li>国立市美術館メンバーシップ大学・専門学校の学生、教職員</li>
+                        <li>武蔵大学、美大学、造形大学、外国語大学、経済大学、工学院専門学校、エアトラベル・ホテル専門学校</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+        <footer class="bg-1">
+
+            <div>
+                <nav>
+                    <ul class="flex">
+                        <li><a href="#">美術館について</a></li>
+
+
+                        <li><a href="#">特別展・イベント</a></li>
+
+
+                        <li><a href="#">コレクション</a></li>
+
+
+                        <li><a href="#">利用案内</a></li>
+
+
+                        <li><a href="#">チケット</a></li>
+                    </ul>
+                </nav>
+
+                <div class="foot">
+                    <div class="flex">
+
+                        <div class="namelogo"><a href="#"><img src="../images/ロゴ名前320x60.png" alt="美術館の名前ロゴ"
+                                    width="320" height="60"></a></div>
+
+                        <address>
+                            <p>〒345-444 東京都国立市1-3-4 TEL567-432-666TEL:055-228-3322　FAX:055-228-3324<br>
+                                開館時間　10:00-18:00（入館は17:30まで）<br>
+                                休館日：月曜日（祝日の場合はその翌日）祝日の翌日（日曜日の場合は開館）年末年始<br>その他臨時開館･休館あり</p>
+                        </address>
+
+
+                    </div>
+                </div>
+                <div class="small">
+                    <p><small>&copy;2025 tokoy kunitaticity Museum</small></p>
+                </div>
+            </div>
+        </footer>
+
+        <div class="top-btn">
+            <p><a href="#"><img src="../images/top40x0.png" alt="トップに戻るボタン" width="40" height="40"></a>
+            </p>
+        </div>
+
+
+    </main>
+
+</body>
+
+</html>

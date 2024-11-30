@@ -1,0 +1,355 @@
+@charset "utf-8";
+
+.inner-1 {
+    width: 1024px;
+    margin: 0 auto;
+    /* outline: 1px solid #2c2c2a; */
+}
+
+main {
+    padding-top: 120px;
+    /* ヘッダーの高さ分の余白を追加 */
+}
+
+.inner-1 {
+    padding: 20px;
+}
+
+h3 {
+
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+
+/* 小さいナビ */
+
+
+.mininavi {
+    padding-top: 15px;
+    margin-bottom: 30px;
+}
+
+.mininavi .flex {
+    justify-content: center;
+    gap: 70px;
+
+}
+
+.mininavi .flex a {
+    color: #2c2c2a;
+    transition: color .3s;
+}
+
+.mininavi .flex a:hover {
+    color: #c2714f;
+}
+
+
+
+.mininavi li::before {
+    content: "";
+    /* 空のコンテンツを生成 */
+    display: inline-block;
+    /* インラインブロックにして、画像として扱えるようにする */
+    width: 5px;
+    /* 画像の幅 */
+    height: 7px;
+    /* 画像の高さ */
+    background-image: url(../images/矢印5x7.png);
+    /* 画像を指定 */
+    background-size: contain;
+    /* 画像を要素の大きさに合わせる */
+    background-repeat: no-repeat;
+    /* 画像が繰り返されないようにする */
+    margin-right: 5px;
+    /* テキストとの間にスペースを作る */
+    vertical-align: middle;
+    /* テキストと縦方向を揃える */
+}
+
+.mininavi li:nth-child(2)::before {
+    background-image: url(../images/矢印5x7.png);
+    /* 2番目のリストアイテムに別の画像 */
+}
+
+.mininavi li:nth-child(3)::before {
+    background-image: url(../images/矢印5x7.png);
+    /* 3番目のリストアイテムに別の画像 */
+}
+
+
+/* コレクションポリシー */
+
+.collerctiontext {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+
+/* ハイライト */
+.container1 {
+    display: flex;
+    align-items: center;
+    /* 縦方向に中央揃え */
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.text1 {
+    margin-left: 180px;
+    /* 画像とテキストの間のスペース */
+    text-align: center;
+    /* テキストを中央揃え */
+    font-size: 28px;
+}
+
+.text1 .moer a {
+    font-size: 16px;
+    margin-top: 50px;
+    color: #00a0e9;
+    transition: color .3s;
+}
+
+.text1 .moer a:hover {
+    color: #727171;
+}
+
+
+
+
+.container2 {
+    display: flex;
+    align-items: center;
+    /* 縦方向に中央揃え */
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.text2 {
+    margin-left: 180px;
+    /* 画像とテキストの間のスペース */
+    text-align: center;
+    /* テキストを中央揃え */
+    font-size: 28px;
+}
+
+.text2 .moer a {
+    font-size: 16px;
+    margin-top: 50px;
+    color: #00a0e9;
+    transition: color .3s;
+}
+
+.text2 .moer a:hover {
+    color: #727171;
+}
+
+
+
+.container3 {
+    display: flex;
+    align-items: center;
+    /* 縦方向に中央揃え */
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.text3 {
+    margin-left: 90px;
+    /* 画像とテキストの間のスペース */
+    text-align: center;
+    /* テキストを中央揃え */
+    font-size: 28px;
+}
+
+.text3 .moer a {
+    font-size: 16px;
+    margin-top: 50px;
+    color: #00a0e9;
+    transition: color .3s;
+}
+
+.text3 .moer a:hover {
+    color: #727171;
+}
+
+/* 画像にホバー */
+
+.container1 a {
+    transition: opacity .3s;
+}
+
+.container1 a:hover {
+    opacity: 0.5;
+}
+
+.container2 a {
+    transition: opacity .3s;
+}
+
+.container2 a:hover {
+    opacity: 0.5;
+}
+
+.container3 a {
+    transition: opacity .3s;
+}
+
+.container3 a:hover {
+    opacity: 0.5;
+}
+
+
+/* ボタン */
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    /* 横方向の中央揃え */
+    align-items: center;
+    /* 縦方向の中央揃え */
+    /* height: 100vh; ビューポート全体の高さに対応させる */
+
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    /* ボタンの内側の余白（縦: 15px、横: 30px） */
+    background-color: #c2714f;
+    /* ボタンの背景色（青色） */
+    color: #f2f1f0;
+    /* テキストの色（白色） */
+    text-decoration: none;
+    /* リンクの下線を消す */
+    font-size: 16px;
+    /* フォントサイズ */
+    border-radius: 5px;
+    /* ボタンの角を丸くする */
+    border: none;
+    /* ボーダーをなくす */
+    text-align: center;
+    /* テキストを中央揃えにする */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* ボタンに影をつける */
+}
+
+.button-container a {
+    transition: background-color .3s;
+}
+
+.button:hover {
+    background-color: #ff9e7f;
+    /* ホバー時にボタンの色を変える */
+}
+
+/* レスポンシブ *
+    
+/* コンテンツ幅の指定方法を修正 */
+.inner-1 {
+    width: auto;
+
+    max-width: 1024px;
+
+    min-width: 280px;
+
+}
+
+
+
+
+/* 見出し画像のフルードイメージ対応 */
+img {
+    max-width: 100%;
+
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.nav-switch {
+    display: none;
+}
+
+@media screen and (max-width:885px) {
+    .text1 {
+        margin-left: 0;
+    }
+
+    .text2 {
+        margin-left: 0;
+    }
+
+    .text3 {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .text1 {
+        font-size: 22px;
+    }
+
+    .text1 a {
+        font-size: 15px;
+    }
+
+    .text2 {
+        font-size: 22px;
+    }
+
+    .text2 a {
+        font-size: 15px;
+    }
+
+    .text3 {
+        font-size: 22px;
+    }
+
+    .text3 a {
+        font-size: 15px;
+    }
+
+    .container1 {
+        display: block
+    }
+
+    .container2 {
+        display: block;
+    }
+
+    .container3 {
+        display: block;
+    }
+
+   
+
+
+}
+
+@media screen and (max-width:700px) {
+    .mininavi{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:405px) {
+    .mininavi{
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width:365px) {
+    .mininavi{
+        font-size: 9px;
+    }
+}

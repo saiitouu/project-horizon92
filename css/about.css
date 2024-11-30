@@ -1,0 +1,498 @@
+@charset "utf-8";
+
+
+.inner-1 {
+    width: 1024px;
+    margin: 0 auto;
+    /* outline: 1px solid #2c2c2a; */
+}
+
+main {
+    padding-top: 120px;
+    /* ヘッダーの高さ分の余白を追加 */
+}
+
+.inner-1 {
+    padding: 20px;
+}
+
+h3 {
+
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+
+/* 小さいナビ */
+
+
+.mininavi {
+    padding-top: 15px;
+}
+
+.mininavi .flex {
+    justify-content: center;
+    gap: 70px;
+
+}
+
+.mininavi .flex a {
+    color: #2c2c2a;
+    transition: color .3s;
+}
+
+.mininavi .flex a:hover {
+    color: #c2714f;
+}
+
+
+
+.mininavi li::before {
+    content: "";
+    /* 空のコンテンツを生成 */
+    display: inline-block;
+    /* インラインブロックにして、画像として扱えるようにする */
+    width: 5px;
+    /* 画像の幅 */
+    height: 7px;
+    /* 画像の高さ */
+    background-image: url(../images/矢印5x7.png);
+    /* 画像を指定 */
+    background-size: contain;
+    /* 画像を要素の大きさに合わせる */
+    background-repeat: no-repeat;
+    /* 画像が繰り返されないようにする */
+    margin-right: 5px;
+    /* テキストとの間にスペースを作る */
+    vertical-align: middle;
+    /* テキストと縦方向を揃える */
+}
+
+.mininavi li:nth-child(2)::before {
+    background-image: url(../images/矢印5x7.png);
+    /* 2番目のリストアイテムに別の画像 */
+}
+
+.mininavi li:nth-child(3)::before {
+    background-image: url(../images/矢印5x7.png);
+    /* 3番目のリストアイテムに別の画像 */
+}
+
+/* ご挨拶 */
+
+.greeting-container {
+    display: flex;
+    /* テキストと画像を横並びに */
+    align-items: flex-start;
+    /* 上に揃える */
+    gap: 80px;
+    /* テキストと画像の間にスペースを作る */
+    margin: 20px 0;
+    /* コンテナの上下に余白を追加 */
+}
+
+.greeting-text {
+    width: 700px;
+    height: 200px;
+    line-height: 1.6;
+    margin-bottom: 70px;
+}
+
+
+.aisatu {
+    margin: 0;
+}
+
+.greeting-image {
+    display: flex;
+    flex-direction: column;
+    /* 画像と館長の名前を縦に並べる */
+    align-items: center;
+    /* 中央揃え */
+    padding-top: 30px;
+}
+
+.greeting-image img {
+    margin-bottom: 5px;
+    /* 画像と館長名の間に余白を追加 */
+}
+
+.kanntyou {
+    text-align: center;
+    margin: 0;
+}
+
+/* 美術館について */
+
+.bizyututext {
+    line-height: 1.5;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* 建築 */
+
+.kenntikuimg {
+    text-align: center;
+    /* 画像を中央に配置 */
+}
+
+.kenntikuimg img {
+    display: inline-block;
+    /* 画像をインラインブロック要素にする（念のため） */
+    margin-top: 20px;
+}
+
+.kenntikutext {
+    line-height: 1.5;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+/* レスポンシブ *
+    
+/* コンテンツ幅の指定方法を修正 */
+.inner-1 {
+    width: auto;
+
+    max-width: 1024px;
+
+    min-width: 280px;
+
+}
+
+
+
+
+/* 見出し画像のフルードイメージ対応 */
+img {
+    max-width: 100%;
+
+    height: auto;
+}
+
+/* header img{
+    max-width: 80%;
+    height: auto;
+} */
+
+
+/* -----------------------------------------
+  チェックボックスを非表示 （最後に追記）
+----------------------------------------- */
+.nav-switch {
+    display: none;
+}
+
+@media screen and (max-width:1130px) {
+
+    .inner-1 {
+        width: 90%;
+    }
+
+
+    header img {
+        max-width: 90%;
+        height: auto;
+        /* 縦横比を保護 */
+        margin-left: 15px;
+    }
+
+
+    /* ハンバーガーボタンを作る */
+    .nav-burger {
+        display: block;
+        /* widthとheightを効かせるためのdisplay切り替え */
+        width: 30px;
+        /* 背景画像の分のサイズを確保 */
+        height: 30px;
+
+        /* ↓ 三本線のボタン画像を背景画像として差し込む */
+        background-image: url(../images/burger_30x30.png);
+
+        position: fixed;
+        /* ブラウザの上から16px、右から16pxの位置に固定 */
+        top: 16px;
+        right: 16px;
+        z-index: 2;
+        /* 重なり順の指定 */
+    }
+
+    /* 三本線のボタンと✕のボタンの切り替え */
+
+    .nav-switch:checked~.nav-burger {
+        background-image: url(../images/close_30x30.png);
+    }
+
+    /* マウスカーソルの調整 */
+    .nav-burger:hover {
+        cursor: pointer;
+    }
+
+    /* ナビゲーションが開いたときの見た目を仕上げる ＝ スタイルを作り変える */
+    .navi {
+        background-color: rgba(251, 246, 246, 0.9);
+        position: fixed;
+        /* ブラウザの画面いっぱいに広げて固定 */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        /* 余白の調整 */
+        margin: 0;
+        padding-top: 100px;
+        z-index: 1;
+    }
+
+    nav ul li a {
+        color: #fff;
+        margin: 15px 0;
+    }
+
+
+    nav ul li a:hover {
+        color: rgba(255, 255, 255, 0.6);
+        background: transparent;
+    }
+
+
+
+    header nav .flex {
+        flex-direction: column;
+        gap: 0;
+        align-items: center;
+        padding-left: 80px;
+    }
+
+
+    /* 横並びを縦並びに変える */
+    header nav ul li {
+        border: none;
+        border-top: 1px solid #aaa;
+        background-color: transparent;
+        width: auto;
+        line-height: 60px;
+
+    }
+
+    nav ul li:last-child {
+        border-bottom: 1px solid #aaa;
+    }
+
+    /* ★★★ html要編集 !
+... navタグに表示/非表示切り替え用のclass名「navi」を追加 */
+
+    /* class名「navi」を使ってnavタグを丸ごと非表示にする */
+    .navi {
+        display: none;
+    }
+
+    /* inputタグにチェックが入ると「navi」が再表示される */
+    .nav-switch:checked~.navi {
+        display: block;
+    }
+
+
+
+    /* フッター */
+
+    footer nav .flex {
+        flex-direction: column;
+        gap: 0;
+        align-items: center;
+        padding-left: 0;
+    }
+
+
+    /* 横並びを縦並びに変える */
+    footer nav ul li {
+        border: none;
+        border-top: 1px solid #aaa;
+        background-color: transparent;
+        width: auto;
+        line-height: 60px;
+
+    }
+
+    nav ul li:last-child {
+        border-bottom: 1px solid #aaa;
+    }
+
+
+    footer .namelogo {
+        padding-left: 0;
+    }
+
+
+    footer address {
+        padding-right: 0;
+    }
+
+    footer .small {
+        text-align: center;
+        padding-top: 0;
+    }
+
+    .foot .flex {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        /* アドレスのテキストを中央揃え */
+    }
+
+    .namelogo img {
+        width: 200px;
+        /* ロゴのサイズを縮小 */
+        height: auto;
+        /* アスペクト比を保持 */
+    }
+
+   
+    
+
+
+
+}
+
+
+@media screen and (max-width:980px) {  
+    .greeting-image{
+        display: none;
+    }
+
+    /* .greeting-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .greeting-image {
+        order: -1; /* 写真を先に表示 */
+        /* max-width: 100%;
+
+        height: auto;
+    } */
+}
+
+
+
+
+
+
+
+
+
+/* -----------------------------------------
+  768px以下の画面に向けた記述
+----------------------------------------- */
+
+@media screen and (max-width:768px) {
+
+    /* ヘッダー */
+    header img {
+        max-width: 80%;
+        height: auto;
+        /* 縦横比を保護 */
+        margin-left: 15px;
+    }
+
+    /* 文字揃えが両端揃えになるよう整える
+    （画面幅が小さいと行送りが増えてバラつきが目立つため） */
+    .abouttext .abouttext2 {
+        text-align: justify;
+    }
+
+    footer .logo img {
+        max-width: 90%;
+    }
+
+    .top-btn img{
+        width: 30px;
+        height: 0px;
+    }
+
+
+
+
+
+
+    .greeting-text{
+        line-height: 1.1;
+    }
+    .bizyututext{
+        line-height: 1.1;
+    }
+
+    .kenntikutext{
+        line-height: 1.1;
+    }
+    .mininavi .flex {
+        gap: 30px;
+    
+    }
+    .top-btn img{
+        width: 20px;
+        height: 20px;
+    }
+
+}
+
+
+
+
+
+@media screen and (max-width:500px) {
+
+    address p {
+        font-size: 10px;
+        /* 必要に応じてフォントサイズを調整 */
+    }
+
+    .top-btn img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .greeting-text{
+        line-height: 1.0;
+        font-size: 15px;
+    }
+
+    .mininavi .flex {
+        gap: 10px;
+    
+    }
+    .greeting-container{
+        margin: 20px 0;
+    }
+    .greeting-text{
+        line-height: 1.0;
+    }
+
+}
+
+
+@media screen and (max-width:410px) {
+    .mininavi{
+        font-size: 11px;
+    }
+
+    .greeting-text{
+        line-height: 1.1;
+        font-size: 12px;
+    }
+}
+
+
+

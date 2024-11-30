@@ -1,0 +1,175 @@
+@charset "utf-8";
+
+.inner-1 {
+    width: 1024px;
+    margin: 0 auto;
+    /* outline: 1px solid #2c2c2a; */
+}
+
+main {
+    padding-top: 120px;
+    /* ヘッダーの高さ分の余白を追加 */
+}
+
+.inner-1 {
+    padding: 20px;
+}
+
+h3 {
+
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+
+/* 小さいナビ */
+
+
+.mininavi {
+    padding-top: 15px;
+    margin-bottom: 30px;
+}
+
+.mininavi .flex {
+    justify-content: center;
+    gap: 70px;
+
+}
+
+.mininavi .flex a {
+    color: #2c2c2a;
+    transition: color .3s;
+}
+
+.mininavi .flex a:hover {
+    color: #c2714f;
+}
+
+
+
+.mininavi li::before {
+    content: "";
+    /* 空のコンテンツを生成 */
+    display: inline-block;
+    /* インラインブロックにして、画像として扱えるようにする */
+    width: 5px;
+    /* 画像の幅 */
+    height: 7px;
+    /* 画像の高さ */
+    background-image: url(../images/矢印5x7.png);
+    /* 画像を指定 */
+    background-size: contain;
+    /* 画像を要素の大きさに合わせる */
+    background-repeat: no-repeat;
+    /* 画像が繰り返されないようにする */
+    margin-right: 5px;
+    /* テキストとの間にスペースを作る */
+    vertical-align: middle;
+    /* テキストと縦方向を揃える */
+}
+
+.mininavi li:nth-child(2)::before {
+    background-image: url(../images/矢印5x7.png);
+    /* 2番目のリストアイテムに別の画像 */
+}
+
+.mininavi li:nth-child(3)::before {
+    background-image: url(../images/矢印5x7.png);
+    /* 3番目のリストアイテムに別の画像 */
+}
+
+/* チケット */
+
+.gap {
+
+    margin: 0;
+    /* デフォルトの余白をなくす */
+    margin-bottom: 15px;
+    /* 各段落の下に20pxの余白を追加 */
+    font-size: 18px;
+
+}
+
+.gap1{
+    margin: 0;
+    /* デフォルトの余白をなくす */
+    margin: 30px 0 30px 0;
+    /* 各段落の下に20pxの余白を追加 */
+}
+
+
+.gap2{
+    margin: 0;
+    /* デフォルトの余白をなくす */
+    margin-bottom: 15px;
+    /* 各段落の下に20pxの余白を追加 */
+    font-size: 13px;
+}
+
+
+/* 割引 */
+
+.kids{
+    margin: 15px 0;
+}
+
+.annualpass{
+    margin:15px 0;
+}
+
+.free-viewing-info{
+    margin: 20px 0;
+}
+
+.free-viewing-info2 ul{
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+.free-viewing-info2 ul li::before{
+    content: "・"; /* 各リスト項目の前に「・」を追加 */
+    margin-right: 5px; /* 「・」とテキストの間にスペースを追加 */
+}
+
+
+.info{
+    padding-bottom: 5px;
+    font-size: 18px;
+}
+
+
+
+/* レスポンシブ *
+    
+/* コンテンツ幅の指定方法を修正 */
+.inner-1 {
+    width: auto;
+
+    max-width: 1024px;
+
+    min-width: 280px;
+
+}
+
+
+
+
+/* 見出し画像のフルードイメージ対応 */
+img {
+    max-width: 100%;
+
+    height: auto;
+    /* margin-bottom: 10px; */
+}
+
+.nav-switch {
+    display: none;
+}
